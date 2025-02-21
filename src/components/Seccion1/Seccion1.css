@@ -294,6 +294,33 @@ body {
         margin-top: -40px;
       }
 
+
+      .destacados-title button{
+        background-color: transparent;
+        border: none;
+      }
+
+      .destacados-title button a{
+        display: block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem auto;
+        position: relative;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 9px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+
+      .destacados-title button a:hover{
+        background-color: #dc0000;
+      }
+
       
       .btn-flechas {
         display: flex;

@@ -144,11 +144,28 @@ const moveRight = () => {
 
 
 
+        <div className='sobre-nosotros'>
+                <h3>"Visita Nuestra Galeria de Imágenes"</h3>
+                <div className='nosotros-title'>
+                    <img src='./assets/img-31.jpg'></img>
+                    <p>Podrás conocer más sobre quiénes somos, ver nuestros cursos en acción y descubrir los trabajos que realizamos. Capturamos cada detalle para que puedas ver nuestro compromiso y pasión en cada proyecto.
+                        <Link to="/galeria" onClick={scrollToTop}>
+                        <button>Ir a Galería</button>
+                        </Link>                    
+                    </p>
+                </div>
+        </div>
+
+
+
+
 
         <div className='productos-destacados'>
                 <div className='destacados-title'>
                     <h3>DESTACADOS</h3>
                     <p>Conocé todos los productos que tenemos para vos!</p>
+                    <button><Link to="/tienda" onClick={scrollToTop}>Visitar Tienda</Link></button>
+
                 </div>
 
                 <div className='btn-flechas'>
