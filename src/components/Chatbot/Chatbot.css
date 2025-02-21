@@ -1,0 +1,256 @@
+
+
+
+
+
+
+
+/* PANTALLA GRANDE */
+@media (min-width: 900px)  {
+
+
+ /* Chatbot.css */
+.chatbotContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3000;
+}
+
+.chatbotContainer img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chatbotContainer img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.closeButton:hover {
+    color: #000;
+}
+
+.modalContent h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.modalContent p {
+    margin: 1rem 0;
+}
+
+.modalContent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modalContent li {
+    margin: 10px 0;
+}
+
+.modalContent li b {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.modalContent li b:hover {
+    background-color: #b4d8ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CELULAR */
+@media (max-width: 900px)  {
+
+
+
+    /* Chatbot.css */
+.chatbotContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+}
+
+.chatbotContainer img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chatbotContainer img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.closeButton:hover {
+    color: #000;
+}
+
+.modalContent h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.modalContent p {
+    margin: 1rem 0;
+}
+
+.modalContent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modalContent li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.modalContent li b {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+    font-weight: 400;
+
+}
+
+.modalContent li b:hover {
+    color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+}
