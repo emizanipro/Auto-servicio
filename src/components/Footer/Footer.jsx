@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import img16 from '../../assets/img/img-16.png'
 
 const Footer = () => {
   const [name, setName] = useState('');
@@ -39,7 +40,7 @@ const Footer = () => {
   return (
     <div className='footer-container'>
       <div className='footer-fondo'>
-        <img src='./assets/img-16.png' alt='Fondo' />
+        <img src={img16} alt='Fondo' />
       </div>
 
       {/* Mover list-footer arriba del form y aplicar estilos */}

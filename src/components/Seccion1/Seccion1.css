@@ -69,12 +69,12 @@ body {
       
       .portada-title h3 {
         font-size: 4rem;
-        color: #ff0000;
+        color: #fc431e;
         text-align: center;
         text-transform: uppercase;
         overflow: hidden;
         display: inline-block;
-        border-right: 3px solid rgb(208, 91, 84); /* Simula el cursor */
+        /* border-right: 3px solid rgb(208, 91, 84); Simula el cursor */
         
         white-space: nowrap; /* Asegura que no haya saltos de línea */
         
@@ -85,7 +85,7 @@ body {
       .portada-title p {
         font-size: 1.5rem;
         margin-top: -40px;
-        color: #ff0000;
+        color: #fc431e;
         font-weight: 600;
         text-align: center;
       }
@@ -150,7 +150,7 @@ body {
         text-align: center;
         margin: 1rem auto;
         position: relative;
-        background-color: #ff0000;
+        background-color: #fc431e;
         color: #fff;
         border: none;
         cursor: pointer;
@@ -195,7 +195,7 @@ body {
       .servicios-title h1 {
         margin-top: -250px;
         font-size: 2.5rem;
-        color:#ff0000;
+        color:#fc431e;
         background: #fff;
         padding: 10px 20px;
         border-radius: 8px;
@@ -244,7 +244,7 @@ body {
       .cards h3 {
         margin: 10px 0;
         font-size: 1.6rem;
-        color:#ff0000 ;
+        color:#fc431e ;
         background-color: #fff;
         width: 70%;
         border-top-left-radius: 6px;
@@ -286,7 +286,7 @@ body {
       }
       .destacados-title h3 {
         font-size: 3rem;
-        color: #ff0000;
+        color: #fc431e;
       }
 
       .destacados-title p {
@@ -307,7 +307,7 @@ body {
         text-align: center;
         margin: 1rem auto;
         position: relative;
-        background-color: #ff0000;
+        background-color: #fc431e;
         color: #fff;
         border: none;
         cursor: pointer;
@@ -402,7 +402,7 @@ body {
     .redes-list h3 {
         font-size: 24px;
         margin-bottom: 10px;
-        color:#ff0000 ;
+        color:#fc431e ;
     }
     
     .redes-list img {

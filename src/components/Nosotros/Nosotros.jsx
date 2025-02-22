@@ -1,7 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Verifica que esto esté presente
-
-
+import img1 from '../../assets/img/marca-1.png';
+import img2 from '../../assets/img/marca-2.png';
+import img3 from '../../assets/img/marca-3.png';
+import img4 from '../../assets/img/marca-4.png';
+import img5 from '../../assets/img/marca-5.png';
+import img6 from '../../assets/img/marca-6.png';
+import img7 from '../../assets/img/marca-7.png';
+import img8 from '../../assets/img/marca-8.png';
+import img9 from '../../assets/img/marca-9.png';
+import img21 from "../../assets/img/img-21.jfif"
+import img22 from "../../assets/img/img-22.jfif"
+import img23 from "../../assets/img/img-23.jfif"
+import img24 from "../../assets/img/img-24.jfif"
+import img30 from '../../assets/img/img-30.jpg';
+import img2logo from '../../assets/img/img-2-logo.png';
 import './Nosotros.css';
 
 function Nosotros() {
@@ -39,13 +52,13 @@ function Nosotros() {
 
   return (
     <div className='Nosotros-container'>
-      <img className='img-1-nosotros' src='./assets/img-2-logo.png'></img>
+      <img className='img-1-nosotros' src={img2logo}></img>
       <div className='nosotros-title-portada'>
-        <img src="./assets/img-24.jfif" alt="Nosotros" />
+        <img src={img24} alt="Nosotros" />
       </div>
 
       <div className='nosotros-img-izquierda'>
-        <img src="./assets/img-21.jfif" alt="Trayectoria" />
+        <img src={img21} alt="Trayectoria" />
         <div>
           <h3>Trayectoria</h3>
           <p>
@@ -56,7 +69,7 @@ function Nosotros() {
       </div>
 
       <div className='nosotros-img-derecha'>
-        <img src="./assets/img-22.jfif" alt="Especialización" />
+        <img src={img22} alt="Especialización" />
         <div>
           <h3>Especialización</h3>
           <p>
@@ -68,7 +81,7 @@ function Nosotros() {
       </div>
 
       <div className='nosotros-img-izquierda'>
-        <img src="./assets/img-23.jfif" alt="Tienda Online" />
+        <img src={img23} alt="Tienda Online" />
         <div>
           <h3>Tienda Online</h3>
           <p>
@@ -80,24 +93,24 @@ function Nosotros() {
 
 
       <div className='representantes'>
-          <img className='representantes-img-fondo' src='./assets/img-30.jpg'></img>
+          <img className='representantes-img-fondo' src={img30}></img>
           <div className='representantes-title'>
               <h3>REPRESENTANTES</h3>
               <p>Somos representantes de las siguientes marcas.</p>
           </div>
           <div className='representantes-cards'>
-              <img src='./assets/marca-1.png'></img>
-              <img src='./assets/marca-2.png'></img>
-              <img src='./assets/marca-3.png'></img>
-              <img src='./assets/marca-4.png'></img>
-              <img src='./assets/marca-5.png'></img>
-              <img src='./assets/marca-6.png'></img>
-              <img src='./assets/marca-7.png'></img>
-              <img src='./assets/marca-8.png'></img>
+              <img src={img1}></img>
+              <img src={img2}></img>
+              <img src={img3}></img>
+              <img src={img4}></img>
+              <img src={img5}></img>
+              <img src={img6}></img>
+              <img src={img7}></img>
+              <img src={img8}></img>
           </div>
           <div className='convenio'>
               <h3>Convenio Especial</h3>
-              <img src='./assets/marca-9.png'></img>
+              <img src={img9}></img>
           </div>
       </div>
 

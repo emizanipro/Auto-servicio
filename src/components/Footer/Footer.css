@@ -135,7 +135,7 @@ body {
           
           .footer-form button {
             padding: 10px;
-            background: #ff0000;
+            background: #fc431e;
             color: #fff;
             border: none;
             margin: 0 auto;
@@ -147,7 +147,7 @@ body {
           }
           
           .footer-form button:hover {
-            background: #e55a00;
+            background: #fc826b;
           }
           
 
