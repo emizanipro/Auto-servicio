@@ -1,491 +1,382 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* PANTALLA GRANDE */
+@media (min-width: 1000px) {
+  .seccion1-container {
+    position: relative;
+    width: 100%;
   }
-  
-  
 
+  .portada {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
 
+  .portada-fondo img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
 
+  .portada-title {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+  }
 
-
-    /* PANTALLA GRANDE */
-    @media (min-width: 1000px) {
-
-
-
-      .seccion1-container {
-        position: relative;
-        width: 100%;
-      }
-      
-      .portada {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-      }
-      
-      .portada-fondo img {
-        width: 110%;
-        height: 100%;
-        object-fit: cover;
-        
-      }
-      
-      .portada-title {
-        position: absolute;
-        top: 35%;
-        left: 10%;
-        transform: translateY(-50%);
-        color: #fff;
-        background: transparent;
-        padding: 20px;
-        border-radius: 8px;
-        max-width: 400px;
-      }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 130%;
-        }
-      }
-      
-      @keyframes fade {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0.7;
-        }
-      }
-      
-      .portada-title h3 {
-        font-size: 4rem;
-        color: #ff0000;
-        text-align: center;
-        text-transform: uppercase;
-        overflow: hidden;
-        display: inline-block;
-        border-right: 3px solid rgb(208, 91, 84); /* Simula el cursor */
-        
-        white-space: nowrap; /* Asegura que no haya saltos de línea */
-        
-        animation: typing 3s steps(12, end) forwards, fade 2s ease-in-out 3s infinite;
-      }
-      
-      
-      .portada-title p {
-        font-size: 1.5rem;
-        margin-top: -40px;
-        color: #ff0000;
-        font-weight: 600;
-        text-align: center;
-      }
-      
-
-
-
-
-
-
-
-
-
-      .sobre-nosotros {
-        text-align: center;
-        width: 100%;
-        padding: 50px 0;
-      }
-      
-      .sobre-nosotros h3 {
-        font-size: 3rem;
-        margin-bottom: 30px;
-      }
-      
-      .nosotros-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      
-      .nosotros-title img {
-        width: 400px;
-        height: auto;
-        transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
-      }
-      
-      .nosotros-title img:hover {
-        transform: translateX(10px) translateY(-10px); /* Mueve la imagen cuando pasa el mouse */
-      }
-      
-      
-      .nosotros-title p {
-        font-size: 1.5rem;
-        max-width: 500px;
-        text-align: center;
-        font-weight: 100;
-      }
-
-      .sobre-nosotros a {
-        text-decoration: none;
-        color: inherit;
-
-      }
-      
-      .sobre-nosotros button {
-        display: block;
-        padding: 10px 20px;
-        font-size: 1rem;
-        text-align: center;
-        margin: 1rem auto;
-        position: relative;
-        background-color: #ff0000;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 9px;
-        transition: background 0.3s;
-        
-      }
-      
-      .sobre-nosotros button:hover {
-        background-color: rgb(180, 70, 65);
-      }
-      
-
-
-
-
-
-
-
-
-
-
-      .servicios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0px;
-      }
-      
-      .servicios-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-      
-      .servicios-title img {
-        width: 100%;
-      }
-      
-      .servicios-title h1 {
-        margin-top: -250px;
-        font-size: 2.5rem;
-        color:#ff0000;
-        background: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-      }
-      
-      .servicios-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        max-width: 80%;
-        width: 100%;
-        margin-top: 20px;
-      }
-      
-      .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #fff;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        opacity: 0; /* Inicialmente invisibles */
-        transform: translateY(20px); /* Empezamos desplazados para el efecto de entrada */
-        transition: opacity 0.9s ease-out, transform 0.9s ease-out; /* Transición suave */
+  @keyframes typing {
+    from {
+      width: 0;
     }
-
-    .cards:hover {
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
+    to {
+      width: 130%;
     }
-    
-    .cards.visible {
-        opacity: 1; /* Se hace visible */
-        transform: translateY(0); /* Vuelve a su posición original */
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
     }
-    
-      
-      .cards img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-      }
-      
-      .cards h3 {
-        margin: 10px 0;
-        font-size: 1.6rem;
-        color:#ff0000 ;
-        background-color: #fff;
-        width: 70%;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        position: relative;
-        top: -45px;
-      }
-      
-      .cards button {
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding: 8px 18px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: -30px;
-        font-size: 1.2rem;
-      }
-      
-      .cards button:hover {
-        background-color: #353535;
-      }
-      
-
-
-
-
-
-
-
-
-
-
-      
-
-      .destacados-title {
-        text-align: center; /* Centrado horizontal */
-        margin-top: 10rem;
-      }
-      .destacados-title h3 {
-        font-size: 3rem;
-        color: #ff0000;
-      }
-
-      .destacados-title p {
-        font-size: 2rem;
-        margin-top: -40px;
-      }
-
-
-      .destacados-title button{
-        background-color: transparent;
-        border: none;
-      }
-
-      .destacados-title button a{
-        display: block;
-        padding: 10px 20px;
-        font-size: 1rem;
-        text-align: center;
-        margin: 1rem auto;
-        position: relative;
-        background-color: #ff0000;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 9px;
-        text-decoration: none;
-        transition: background 0.3s;
-      }
-
-
-      .destacados-title button a:hover{
-        background-color: #dc0000;
-      }
-
-      
-      .btn-flechas {
-        display: flex;
-        justify-content: space-between;
-        margin: 0px auto;
-        width: 90%;
-      }
-
-      .btn-flechas img {
-        width: 60px;
-        height: 60px;
-        position: relative;
-        top: 10rem;
-      }
-      
-      .btn-flechas button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .destacados-list {
-        display: flex;
-        overflow-x: hidden; /* Oculta el desbordamiento horizontal */
-        scroll-behavior: smooth; /* Desplazamiento suave */
-        gap: 0px; /* Espaciado entre los productos */
-        padding: 10px 0;
-        width: 70%;
-        margin: 0 auto;
-      }
-      
-      .producto-list {
-        display: flex;
-        padding: 20px;
-        cursor: pointer;
-        flex-direction: column; /* Cambié la dirección para mejorar la disposición */
-        align-items: center; /* Centra la imagen y el texto */
-        width: 220px; /* Aumenta el ancho de los productos */
-        flex-shrink: 0; /* Para evitar que los productos se achiquen */
-        transition: transform 0.3s ease; /* Efecto de transición */
-
-      }
-      
-      .producto-list:hover {
-        transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
-        background-color: #f5f5f5;
-      }
-      
-      .producto-list img {
-        width: 120px; /* Tamaño más grande de la imagen */
-        height: 120px; /* Mantener la relación de aspecto */
-        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
-        object-fit: cover; /* Para ajustar la imagen dentro del contenedor sin distorsión */
-      }
-      
-      .producto-list h3, .producto-list p, .producto-list h5 {
-        margin: 5px 0; /* Espaciado entre los elementos */
-        text-align: center; /* Centra el texto */
-      }
-      
-
-
-
-
-
-
-
-
-
-
-
-      .redes-sociales {
-        text-align: center;
-        padding: 70px;
-        background-color: #000;
-        margin-top: 3rem;
+    50% {
+      opacity: 1;
     }
-    
-    .redes-list h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color:#ff0000 ;
+    100% {
+      opacity: 0.7;
     }
-    
-    .redes-list img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .redes-post {
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        gap: 20px; /* Espacio entre imágenes */
-        margin-top: 20px;
-    }
-    
-    .redes-post button {
-        border: none;
-        background: none;
-        cursor: pointer;
-        padding: 0;
-    }
-    
-    .redes-post img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover; /* Ajustar imagen */
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
-    
-    .redes-post img:hover {
-        transform: scale(1.05);
-    }
-    
+  }
 
+  .portada-title h3 {
+    font-size: 4rem;
+    color: #fc431e;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap; /* Asegura que no haya saltos de línea */
+    animation: typing 3s steps(12, end) forwards,
+      fade 2s ease-in-out 3s infinite;
+  }
 
+  .portada-title p {
+    font-size: 1.5rem;
+    margin-top: -40px;
+    color: #fc431e;
+    font-weight: 600;
+    text-align: center;
+  }
 
+  .sobre-nosotros {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+  }
 
-      
+  .sobre-nosotros h3 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
 
-      
+  .nosotros-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-        
-    }
+  .nosotros-title img {
+    width: 400px;
+    height: auto;
+    transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
+  }
 
-  
-  
-  
+  .nosotros-title img:hover {
+    transform: translateX(10px) translateY(-10px); /* Mueve la imagen cuando pasa el mouse */
+  }
 
+  .nosotros-title p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    text-align: center;
+    font-weight: 100;
+  }
 
+  .sobre-nosotros a {
+    text-decoration: none;
+    color: inherit;
+  }
 
+  .sobre-nosotros button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+    background-color: #fc431e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background 0.3s;
+  }
 
+  .sobre-nosotros button:hover {
+    background-color: #fc826b;
+  }
 
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
 
+  .servicios-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
+  .servicios-title img {
+    width: 100%;
+  }
 
+  .servicios-title h1 {
+    margin-top: -250px;
+    font-size: 2.5rem;
+    color: #fc431e;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
 
+  .servicios-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 80%;
+    width: 100%;
+    margin-top: 20px;
+  }
 
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0; /* Inicialmente invisibles */
+    transform: translateY(
+      20px
+    ); /* Empezamos desplazados para el efecto de entrada */
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out; /* Transición suave */
+  }
 
+  .cards:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
+  .cards.visible {
+    opacity: 1; /* Se hace visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
 
+  .cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 
+  .cards h3 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    color: #fc431e;
+    background-color: #fff;
+    width: 70%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    top: -45px;
+  }
 
+  .cards button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: -30px;
+    font-size: 1.2rem;
+  }
 
+  .cards button:hover {
+    background-color: #353535;
+  }
 
+  .destacados-title {
+    text-align: center; /* Centrado horizontal */
+    margin-top: 10rem;
+  }
+  .destacados-title h3 {
+    font-size: 3rem;
+    color: #fc431e;
+  }
 
+  .destacados-title p {
+    font-size: 2rem;
+    margin-top: -40px;
+  }
 
+  .destacados-title button {
+    background-color: transparent;
+    border: none;
+  }
 
+  .destacados-title button a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+    background-color: #fc431e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
 
+  .destacados-title button a:hover {
+    background-color: #fc826b;
+  }
 
+  .btn-flechas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 90%;
+  }
 
-  
-   /* CELULAR */
-   @media (max-width: 1000px) {
-  
-  
-   }
+  .btn-flechas img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 10rem;
+  }
 
-   
+  .btn-flechas button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
+  .destacados-list {
+    display: flex;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    gap: 0px; /* Espaciado entre los productos */
+    padding: 10px 0;
+    width: 70%;
+    margin: 0 auto;
+  }
 
+  .producto-list {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    flex-direction: column; /* Cambié la dirección para mejorar la disposición */
+    align-items: center; /* Centra la imagen y el texto */
+    width: 220px; /* Aumenta el ancho de los productos */
+    flex-shrink: 0; /* Para evitar que los productos se achiquen */
+    transition: transform 0.3s ease; /* Efecto de transición */
+  }
 
+  .producto-list:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    background-color: #f5f5f5;
+  }
 
+  .producto-list img {
+    width: 120px; /* Tamaño más grande de la imagen */
+    height: 120px; /* Mantener la relación de aspecto */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    object-fit: cover; /* Para ajustar la imagen dentro del contenedor sin distorsión */
+  }
 
+  .producto-list h3,
+  .producto-list p,
+  .producto-list h5 {
+    margin: 5px 0; /* Espaciado entre los elementos */
+    text-align: center; /* Centra el texto */
+  }
 
+  .redes-sociales {
+    text-align: center;
+    padding: 70px;
+    background-color: #000;
+    margin-top: 3rem;
+  }
 
+  .redes-list h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fc431e;
+  }
 
+  .redes-list img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .redes-post {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre imágenes */
+    margin-top: 20px;
+  }
+
+  .redes-post button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .redes-post img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ajustar imagen */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .redes-post img:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* CELULAR */
+@media (max-width: 1000px) {
+}
